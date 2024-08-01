@@ -8,15 +8,13 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig(({ mode }) => {
     return {
         server: {
-            port: 8080,
+            port: 3000,
         },
         resolve: {
             alias: {
-                '@app': path.resolve(__dirname, 'app'),
-                '@user': path.resolve(__dirname, 'accounts/user'),
-                '@admin': path.resolve(__dirname, 'accounts/admin'),
-                '@shared': path.resolve(__dirname, 'shared'),
-                '@styles': path.resolve(__dirname, 'shared/styles/index.scss'),
+                '@assets': path.resolve(__dirname, 'src/assets'),
+                '@shared': path.resolve(__dirname, 'src/shared'),
+                '@pages': path.resolve(__dirname, 'src/pages'),
             },
         },
 
