@@ -36,6 +36,9 @@
             "@lib/*": [
                 "src/lib/*"
             ],
+            "@widgets/*": [
+                "src/widgets/*"
+            ],
             "@/*": [
                 "src/*"
             ]

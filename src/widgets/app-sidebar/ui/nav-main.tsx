@@ -1,4 +1,3 @@
-import { type LucideIcon } from 'lucide-react';
 import { FC } from 'react';
 
 import {
@@ -8,7 +7,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@shared/ui/sidebar/sidebar';
-import { NavMenuType } from '@shared/components/app-sidebar/types/types';
+import { NavMenuType } from '../types/types';
 
 interface INavMainProps {
     items: NavMenuType[];

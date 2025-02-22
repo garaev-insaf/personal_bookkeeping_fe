@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { BookOpen, Bot, HelpCircle, LayoutDashboardIcon, Settings2 } from 'lucide-react';
 
-import { NavUser } from '@shared/components/app-sidebar/ui/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from '@shared/ui';
 import { NavMain } from './nav-main';
 import { NavOther } from './nav-other';
+import { NavUser } from './nav-user';
 
-// This is sample data.
 const data = {
     user: {
         name: 'scotch',

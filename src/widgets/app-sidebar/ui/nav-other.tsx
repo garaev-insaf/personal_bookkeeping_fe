@@ -19,21 +19,21 @@ import {
 } from '@shared/ui/sidebar/sidebar';
 
 interface INavOther {
-    projects: {
+    items: {
         name: string;
         url: string;
         icon: LucideIcon;
     }[];
 }
 
-export const NavOther: FC<INavOther> = ({ projects }) => {
+export const NavOther: FC<INavOther> = ({ items }) => {
     const { isMobile } = useSidebar();
 
     return (
         <SidebarGroup className="group-data-[collapsible=icon]:hidden">
             <SidebarGroupLabel>Other</SidebarGroupLabel>
             <SidebarMenu>
-                {projects.map((item) => (
+                {items.map((item) => (
                     <SidebarMenuItem key={item.name}>
                         <SidebarMenuButton asChild>
                             <a href={item.url}>
