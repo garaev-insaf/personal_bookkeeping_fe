@@ -7,6 +7,13 @@
         "scss/at-mixin-pattern": null,
         "property-no-unknown": null,
         "media-feature-range-notation": "prefix",
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["tailwind"]
+            }
+        ],
+       
         "selector-pseudo-class-no-unknown": [
             true,
             {

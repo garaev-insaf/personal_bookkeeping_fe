@@ -5,6 +5,7 @@ import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } fr
 import { NavMain } from './nav-main';
 import { NavOther } from './nav-other';
 import { NavUser } from './nav-user';
+import { RoutePaths } from '@/app/routes';
 
 const data = {
     user: {
@@ -15,28 +16,14 @@ const data = {
     navMain: [
         {
             title: 'Dashboard',
-            url: '/',
+            url: RoutePaths.HOME_PAGE,
             icon: LayoutDashboardIcon,
             isActive: true,
         },
         {
-            title: 'Models',
-            url: '#',
+            title: 'Tranactions',
+            url: RoutePaths.TRANACTIONS_PAGE,
             icon: Bot,
-            items: [
-                {
-                    title: 'Genesis',
-                    url: '#',
-                },
-                {
-                    title: 'Explorer',
-                    url: '#',
-                },
-                {
-                    title: 'Quantum',
-                    url: '#',
-                },
-            ],
         },
         {
             title: 'Documentation',
@@ -61,29 +48,6 @@ const data = {
                 },
             ],
         },
-        {
-            title: 'Settings',
-            url: '#',
-            icon: Settings2,
-            items: [
-                {
-                    title: 'General',
-                    url: '#',
-                },
-                {
-                    title: 'Team',
-                    url: '#',
-                },
-                {
-                    title: 'Billing',
-                    url: '#',
-                },
-                {
-                    title: 'Limits',
-                    url: '#',
-                },
-            ],
-        },
     ],
     projects: [
         {
@@ -97,7 +61,7 @@ const data = {
             icon: Settings2,
         },
         {
-            name: 'Settings',
+            name: 'Info',
             url: '#',
             icon: HelpCircle,
         },
